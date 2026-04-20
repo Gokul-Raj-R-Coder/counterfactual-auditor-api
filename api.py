@@ -10,7 +10,7 @@ app = FastAPI(title="Counterfactual Auditor API (Cloud Production)")
 
 # Best practice for Cloud: Pull the key from an environment variable, 
 # but hardcoding is fine for a quick hackathon demo.
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDiftObQfhlPOnDxpoEN0tJEGr-Q-6cVNg")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY_HERE")
 gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
 # Enable CORS for Flutter Web
